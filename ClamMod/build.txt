@@ -1,0 +1,9 @@
+author = BroskiPlays
+version = 0.2.6
+displayName = Logicality 
+homepage = 
+hideCode = true
+hideResources = true
+includeSource = true
+buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*
+includePDB = true
