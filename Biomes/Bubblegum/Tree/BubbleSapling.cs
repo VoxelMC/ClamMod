@@ -7,7 +7,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace ClamMod.Biomes.Bubblegum.Tree
+namespace Logicalty.Biomes.Bubblegum.Tree
 {
 	public class BubbleSapling : ModTile
 	{

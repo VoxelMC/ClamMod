@@ -1,7 +1,7 @@
 using Microsoft.Xna.Framework.Graphics;
 using Terraria.ModLoader;
 
-namespace ClamMod.Biomes.Bubblegum.Tree
+namespace Logicalty.Biomes.Bubblegum.Tree
 {
 	public class BubbleTree : ModTree
 	{
@@ -9,7 +9,7 @@ namespace ClamMod.Biomes.Bubblegum.Tree
         {
             get
             {
-                return ModLoader.GetMod("ClamMod");
+                return ModLoader.GetMod("Logicalty");
             }
         }
 

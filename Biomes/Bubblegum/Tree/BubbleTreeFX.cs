@@ -2,7 +2,7 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace ClamMod.Biomes.Bubblegum.Tree
+namespace Logicalty.Biomes.Bubblegum.Tree
 {
 	public class BubbleTreeFX : ModGore
 	{
