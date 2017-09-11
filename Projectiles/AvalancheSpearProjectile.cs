@@ -48,8 +48,9 @@ namespace Logicalty.Projectiles
 			projOwner.itemTime = projOwner.itemAnimation;
 			projectile.position.X = ownerMountedCenter.X - (float)(projectile.width / 2);
 			projectile.position.Y = ownerMountedCenter.Y - (float)(projectile.height / 2);
-			// As long as the player isn't frozen, the spear can move
-			if (!projOwner.frozen)
+            Lighting.AddLight(projectile.Center, 0f, 1.9f, 3.5f);
+            // As long as the player isn't frozen, the spear can move
+            if (!projOwner.frozen)
 			{
 				if (movementFactor == 0f) // When initially thrown out, the ai0 will be 0f
 				{
@@ -84,14 +85,14 @@ namespace Logicalty.Projectiles
 			// These dusts are added later, for the 'ExampleMod' effect
 			if (Main.rand.Next(3) == 0)
 			{
-				Dust dust = Dust.NewDustDirect(projectile.position, projectile.height, projectile.width, 32,
+				Dust dust = Dust.NewDustDirect(projectile.position, projectile.height, projectile.width, 211,
 					projectile.velocity.X * .2f, projectile.velocity.Y * .2f, 200, Scale: 1.2f);
 				dust.velocity += projectile.velocity * 0.3f;
 				dust.velocity *= 0.2f;
 			}
 			if (Main.rand.Next(4) == 0)
 			{
-				Dust dust = Dust.NewDustDirect(projectile.position, projectile.height, projectile.width, 32,
+				Dust dust = Dust.NewDustDirect(projectile.position, projectile.height, projectile.width, 211,
 					0, 0, 254, Scale: 0.3f);
 				dust.velocity += projectile.velocity * 0.5f;
 				dust.velocity *= 0.5f;
