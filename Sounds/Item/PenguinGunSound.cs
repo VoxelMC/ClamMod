@@ -2,7 +2,7 @@ using Microsoft.Xna.Framework.Audio;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace ClamMod.Sounds.Item
+namespace Logicalty.Sounds.Item
 {
 	public class PenguinGunSound : ModSound
 	{
