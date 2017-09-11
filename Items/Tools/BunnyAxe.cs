@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ClamMod.Items.Tools
+namespace Logicalty.Items.Tools
 {
 	public class BunnyAxe : ModItem
 	{
