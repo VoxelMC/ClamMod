@@ -1,0 +1,77 @@
+using System;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+using Terraria;
+using Terraria.ModLoader;
+
+namespace Logicalty.Projectiles
+{
+	public class AvalancheFlail : ModProjectile
+	{
+		public override void SetDefaults()
+		{
+
+			projectile.width = 34;
+			projectile.height = 34;
+			projectile.friendly = true;
+			projectile.penetrate = -1; // Penetrates NPCs infinitely.
+			projectile.melee = true; // Deals melee dmg.
+
+			projectile.aiStyle = 15; // Set the aiStyle to that of a flail.
+		}
+
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Avalanche Flail");
+
+		}
+
+
+		public override bool PreDraw(SpriteBatch spriteBatch, Color lightColor)
+		{
+			Texture2D texture = ModLoader.GetTexture("Logicalty/Projectiles/AvalancheFlail_Chain");
+
+			Vector2 position = projectile.Center;
+			Vector2 mountedCenter = Main.player[projectile.owner].MountedCenter;
+			Rectangle? sourceRectangle = new Rectangle?();
+			Vector2 origin = new Vector2(texture.Width * 0.5f, texture.Height * 0.5f);
+			float num1 = texture.Height;
+			Vector2 vector2_4 = mountedCenter - position;
+			float rotation = (float)Math.Atan2(vector2_4.Y, vector2_4.X) - 1.57f;
+			bool flag = true;
+			if (float.IsNaN(position.X) && float.IsNaN(position.Y))
+				flag = false;
+			if (float.IsNaN(vector2_4.X) && float.IsNaN(vector2_4.Y))
+				flag = false;
+			while (flag)
+			{
+				if (vector2_4.Length() < num1 + 1.0)
+				{
+					flag = false;
+				}
+				else
+				{
+					Vector2 vector2_1 = vector2_4;
+					vector2_1.Normalize();
+					position += vector2_1 * num1;
+					vector2_4 = mountedCenter - position;
+					Color color2 = Lighting.GetColor((int)position.X / 16, (int)(position.Y / 16.0));
+					color2 = projectile.GetAlpha(color2);
+					Main.spriteBatch.Draw(texture, position - Main.screenPosition, sourceRectangle, color2, rotation, origin, 1f, SpriteEffects.None, 0.0f);
+                    Lighting.AddLight(projectile.Center, 0f, 1.9f, 3.5f);
+                    Dust.NewDustDirect(projectile.position, projectile.height, projectile.width, 211, 0, 0, 254, Scale: 0.3f);
+                }
+			}
+
+			return true;
+		}
+
+		public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+		{
+			if (Main.rand.Next(5) == 0)
+			{
+				Projectile.NewProjectile(projectile.Center.X, projectile.Center.Y, 0f, 0f, 34, projectile.damage, projectile.knockBack, projectile.owner, 0f, 0f);
+            }
+		}
+	}
+}
