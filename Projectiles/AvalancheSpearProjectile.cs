@@ -84,14 +84,14 @@ namespace Logicalty.Projectiles
 			// These dusts are added later, for the 'ExampleMod' effect
 			if (Main.rand.Next(3) == 0)
 			{
-				Dust dust = Dust.NewDustDirect(projectile.position, projectile.height, projectile.width, mod.DustType<Dusts.Sparkle>(),
+				Dust dust = Dust.NewDustDirect(projectile.position, projectile.height, projectile.width, 32,
 					projectile.velocity.X * .2f, projectile.velocity.Y * .2f, 200, Scale: 1.2f);
 				dust.velocity += projectile.velocity * 0.3f;
 				dust.velocity *= 0.2f;
 			}
 			if (Main.rand.Next(4) == 0)
 			{
-				Dust dust = Dust.NewDustDirect(projectile.position, projectile.height, projectile.width, mod.DustType<Dusts.Sparkle>(),
+				Dust dust = Dust.NewDustDirect(projectile.position, projectile.height, projectile.width, 32,
 					0, 0, 254, Scale: 0.3f);
 				dust.velocity += projectile.velocity * 0.5f;
 				dust.velocity *= 0.5f;
