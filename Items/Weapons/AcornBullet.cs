@@ -1,7 +1,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ClamMod.Items.Weapons
+namespace Logicalty.Items.Weapons
 {
 	public class AcornBullet : ModItem
 	{

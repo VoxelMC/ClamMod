@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ClamMod.Items.Weapons
+namespace Logicalty.Items.Weapons
 {
 	public class CactiteBlade : ModItem
 	{

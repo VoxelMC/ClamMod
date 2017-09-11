@@ -1,9 +1,9 @@
-﻿using ClamMod.Projectiles;
+﻿using Logicalty.Projectiles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ClamMod.Items.Weapons
+namespace Logicalty.Items.Weapons
 {
 	public class DreamYoyo : ModItem
 	{
