@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ClamMod.Biomes.Bubblegum.Tree
+namespace Logicalty.Biomes.Bubblegum.Tree
 {
 	public class BubbleBlock : ModTile
 	{
