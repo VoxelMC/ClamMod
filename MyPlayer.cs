@@ -16,7 +16,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ModLoader.IO;
 using Terraria.ModLoader;
 
-namespace ClamMod
+namespace Logicalty
 {
     public class MyPlayer : ModPlayer
     {

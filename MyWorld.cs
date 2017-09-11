@@ -12,7 +12,7 @@ using Terraria.ModLoader.IO;
 using Terraria.DataStructures;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace ClamMod
+namespace Logicalty
 {
     public class MyWorld : ModWorld
     {

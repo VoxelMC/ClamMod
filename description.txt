@@ -5,11 +5,8 @@ I am talking about the Acorns, Starfishes, shells etc
 
 Now these items finally have some useful weapons/items/accessories for them
 
-0.2.6 
-- 5 NEW Items
-- New Bandage Bow!
-- Bugfixes, No More Luminite Ores in Bubblegum Biome
-- A Mysterious Igloo appeared?!
+0.2.6.1 
+- removed illegal sprites from the mod, will be updated with new ones asap!
 
 Over 70+ Items already!
 
