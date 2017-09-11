@@ -1,7 +1,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ClamMod.Items.Placeable
+namespace Logicalty.Items.Placeable
 {
 	public class AcornDoor : ModItem
 	{

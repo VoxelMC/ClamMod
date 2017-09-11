@@ -1,6 +1,6 @@
 using Terraria.ModLoader;
 
-namespace ClamMod.Items.Placeable
+namespace Logicalty.Items.Placeable
 {
 	public class AcornWall : ModItem
 	{
