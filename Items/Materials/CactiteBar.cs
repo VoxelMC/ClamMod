@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ClamMod.Items.Materials
+namespace Logicalty.Items.Materials
 {
 	public class CactiteBar : ModItem
 	{
