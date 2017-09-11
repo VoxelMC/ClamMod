@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ClamMod.Biomes.Bubblegum.Mobs
+namespace Logicalty.Biomes.Bubblegum.Mobs
 {
 
 	public class Bubble : ModNPC
