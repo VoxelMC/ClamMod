@@ -1,7 +1,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace ClamMod.Items.Armor
+namespace Logicalty.Items.Armor
 {
 	// This and several other classes show off using EquipTextures to do a Merfolk or Werewolf effect. 
 	// Typically Armor items are automatically paired with an EquipTexture, but we can manually use EquipTextures to achieve more unique effects.

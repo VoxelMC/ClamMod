@@ -5,7 +5,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ClamMod.Items.Armor
+namespace Logicalty.Items.Armor
 {
 	[AutoloadEquip(EquipType.Head)]
 	public class SunFlowerHat : ModItem
