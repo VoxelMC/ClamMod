@@ -7,7 +7,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace ClamMod.NPCs
+namespace Logicalty.NPCs
 {
     public class BunnyDrop : GlobalNPC
     {

@@ -4,7 +4,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.Utilities;
 
-namespace ClamMod.NPCs
+namespace Logicalty.NPCs
 {
 	[AutoloadHead]
 	public class BananaMan : ModNPC
@@ -13,7 +13,7 @@ namespace ClamMod.NPCs
 		{
 			get
 			{
-				return "ClamMod/NPCs/BananaMan";
+				return "Logicalty/NPCs/BananaMan";
 			}
 		}
 
@@ -21,7 +21,7 @@ namespace ClamMod.NPCs
 		{
 			get
 			{
-				return new string[] { "ClamMod/NPCs/BananaMan_Alt_1" };
+				return new string[] { "Logicalty/NPCs/BananaMan_Alt_1" };
 			}
 		}
 
