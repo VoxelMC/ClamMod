@@ -1,7 +1,7 @@
 ﻿using Terraria;
 using Terraria.ModLoader;
 
-namespace ClamMod.Buffs
+namespace Logicalty.Buffs
 {
     public class ZombieMinionBuff : ModBuff
     {
