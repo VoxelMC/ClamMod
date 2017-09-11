@@ -7,7 +7,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace ClamMod.Tiles
+namespace Logicalty.Tiles
 {
 	public class MercyTorch : ModTile
 	{

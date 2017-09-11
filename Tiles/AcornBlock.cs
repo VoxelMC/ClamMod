@@ -2,7 +2,7 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace ClamMod.Tiles
+namespace Logicalty.Tiles
 {
 	public class AcornBlock : ModTile
 	{
