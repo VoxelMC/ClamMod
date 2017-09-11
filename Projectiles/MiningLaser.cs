@@ -7,7 +7,7 @@ using Terraria.ModLoader;
 using Terraria.ID;
 using Terraria.Enums;
 
-namespace ClamMod.Projectiles
+namespace Logicalty.Projectiles
 {
 	public class MiningLaser : ModProjectile
 	{

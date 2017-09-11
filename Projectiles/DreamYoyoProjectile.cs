@@ -2,7 +2,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ClamMod.Projectiles
+namespace Logicalty.Projectiles
 {
 	public class DreamYoyoProjectile : ModProjectile
 	{
