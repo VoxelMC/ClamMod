@@ -42,5 +42,14 @@ namespace Logicalty.Items.Weapons
 			// Ensures no more than one spear can be thrown out, use this when using autoReuse
 			return player.ownedProjectileCounts[item.shoot] < 1; 
 		}
-	}
+        public override void AddRecipes()
+        {
+            ModRecipe recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.SnowBlock, 50);
+            recipe.AddIngredient(ItemID.IceBlock, 50);
+            recipe.AddTile(TileID.Anvils);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+        }
+    }
 }
