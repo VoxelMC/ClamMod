@@ -2,7 +2,7 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace ClamMod.Walls
+namespace Logicalty.Walls
 {
 	public class AcornWall : ModWall
 	{
