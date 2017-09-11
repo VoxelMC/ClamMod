@@ -2,7 +2,7 @@
 using Terraria.ModLoader;
 using Terraria.ID;
 
-namespace ClamMod.Items.Accessories
+namespace Logicalty.Items.Accessories
 {
     public class CloudBoots : ModItem
     {

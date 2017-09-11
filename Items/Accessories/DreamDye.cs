@@ -1,7 +1,7 @@
 ﻿using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ClamMod.Items.Accessories
+namespace Logicalty.Items.Accessories
 {
 	public class DreamDye : ModItem
 	{
