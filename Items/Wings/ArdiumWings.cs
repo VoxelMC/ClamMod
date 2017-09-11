@@ -1,7 +1,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace ClamMod.Items.Wings
+namespace Logicalty.Items.Wings
 {
 	[AutoloadEquip(EquipType.Wings)]
 	public class ArdiumWings : ModItem
